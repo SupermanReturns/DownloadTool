@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF2FAC5F20FDED53002971DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC5E20FDED53002971DB /* AppDelegate.m */; };
+		CF2FAC6220FDED53002971DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC6120FDED53002971DB /* ViewController.m */; };
+		CF2FAC6520FDED53002971DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2FAC6320FDED53002971DB /* Main.storyboard */; };
+		CF2FAC6720FDED55002971DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2FAC6620FDED55002971DB /* Assets.xcassets */; };
+		CF2FAC6A20FDED55002971DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2FAC6820FDED55002971DB /* LaunchScreen.storyboard */; };
+		CF2FAC6D20FDED55002971DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC6C20FDED55002971DB /* main.m */; };
+		CF2FAC7720FDED56002971DB /* DownloadToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC7620FDED56002971DB /* DownloadToolTests.m */; };
+		CF2FAC8220FDED56002971DB /* DownloadToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC8120FDED56002971DB /* DownloadToolUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF2FAC7320FDED56002971DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF2FAC5220FDED53002971DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF2FAC5920FDED53002971DB;
+			remoteInfo = DownloadTool;
+		};
+		CF2FAC7E20FDED56002971DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF2FAC5220FDED53002971DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF2FAC5920FDED53002971DB;
+			remoteInfo = DownloadTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF2FAC5A20FDED53002971DB /* DownloadTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2FAC5D20FDED53002971DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF2FAC5E20FDED53002971DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF2FAC6020FDED53002971DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF2FAC6120FDED53002971DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF2FAC6420FDED53002971DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF2FAC6620FDED55002971DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF2FAC6920FDED55002971DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF2FAC6B20FDED55002971DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2FAC6C20FDED55002971DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF2FAC7220FDED56002971DB /* DownloadToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2FAC7620FDED56002971DB /* DownloadToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadToolTests.m; sourceTree = "<group>"; };
+		CF2FAC7820FDED56002971DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2FAC7D20FDED56002971DB /* DownloadToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2FAC8120FDED56002971DB /* DownloadToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadToolUITests.m; sourceTree = "<group>"; };
+		CF2FAC8320FDED56002971DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF2FAC5720FDED53002971DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2FAC6F20FDED56002971DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2FAC7A20FDED56002971DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF2FAC5120FDED53002971DB = {
+			isa = PBXGroup;
+			children = (
+				CF2FAC5C20FDED53002971DB /* DownloadTool */,
+				CF2FAC7520FDED56002971DB /* DownloadToolTests */,
+				CF2FAC8020FDED56002971DB /* DownloadToolUITests */,
+				CF2FAC5B20FDED53002971DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF2FAC5B20FDED53002971DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF2FAC5A20FDED53002971DB /* DownloadTool.app */,
+				CF2FAC7220FDED56002971DB /* DownloadToolTests.xctest */,
+				CF2FAC7D20FDED56002971DB /* DownloadToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF2FAC5C20FDED53002971DB /* DownloadTool */ = {
+			isa = PBXGroup;
+			children = (
+				CF2FAC5D20FDED53002971DB /* AppDelegate.h */,
+				CF2FAC5E20FDED53002971DB /* AppDelegate.m */,
+				CF2FAC6020FDED53002971DB /* ViewController.h */,
+				CF2FAC6120FDED53002971DB /* ViewController.m */,
+				CF2FAC6320FDED53002971DB /* Main.storyboard */,
+				CF2FAC6620FDED55002971DB /* Assets.xcassets */,
+				CF2FAC6820FDED55002971DB /* LaunchScreen.storyboard */,
+				CF2FAC6B20FDED55002971DB /* Info.plist */,
+				CF2FAC6C20FDED55002971DB /* main.m */,
+			);
+			path = DownloadTool;
+			sourceTree = "<group>";
+		};
+		CF2FAC7520FDED56002971DB /* DownloadToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF2FAC7620FDED56002971DB /* DownloadToolTests.m */,
+				CF2FAC7820FDED56002971DB /* Info.plist */,
+			);
+			path = DownloadToolTests;
+			sourceTree = "<group>";
+		};
+		CF2FAC8020FDED56002971DB /* DownloadToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF2FAC8120FDED56002971DB /* DownloadToolUITests.m */,
+				CF2FAC8320FDED56002971DB /* Info.plist */,
+			);
+			path = DownloadToolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF2FAC5920FDED53002971DB /* DownloadTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2FAC8620FDED56002971DB /* Build configuration list for PBXNativeTarget "DownloadTool" */;
+			buildPhases = (
+				CF2FAC5620FDED53002971DB /* Sources */,
+				CF2FAC5720FDED53002971DB /* Frameworks */,
+				CF2FAC5820FDED53002971DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DownloadTool;
+			productName = DownloadTool;
+			productReference = CF2FAC5A20FDED53002971DB /* DownloadTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF2FAC7120FDED56002971DB /* DownloadToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2FAC8920FDED56002971DB /* Build configuration list for PBXNativeTarget "DownloadToolTests" */;
+			buildPhases = (
+				CF2FAC6E20FDED56002971DB /* Sources */,
+				CF2FAC6F20FDED56002971DB /* Frameworks */,
+				CF2FAC7020FDED56002971DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF2FAC7420FDED56002971DB /* PBXTargetDependency */,
+			);
+			name = DownloadToolTests;
+			productName = DownloadToolTests;
+			productReference = CF2FAC7220FDED56002971DB /* DownloadToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF2FAC7C20FDED56002971DB /* DownloadToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2FAC8C20FDED56002971DB /* Build configuration list for PBXNativeTarget "DownloadToolUITests" */;
+			buildPhases = (
+				CF2FAC7920FDED56002971DB /* Sources */,
+				CF2FAC7A20FDED56002971DB /* Frameworks */,
+				CF2FAC7B20FDED56002971DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF2FAC7F20FDED56002971DB /* PBXTargetDependency */,
+			);
+			name = DownloadToolUITests;
+			productName = DownloadToolUITests;
+			productReference = CF2FAC7D20FDED56002971DB /* DownloadToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF2FAC5220FDED53002971DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Superman;
+				TargetAttributes = {
+					CF2FAC5920FDED53002971DB = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					CF2FAC7120FDED56002971DB = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CF2FAC5920FDED53002971DB;
+					};
+					CF2FAC7C20FDED56002971DB = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CF2FAC5920FDED53002971DB;
+					};
+				};
+			};
+			buildConfigurationList = CF2FAC5520FDED53002971DB /* Build configuration list for PBXProject "DownloadTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF2FAC5120FDED53002971DB;
+			productRefGroup = CF2FAC5B20FDED53002971DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF2FAC5920FDED53002971DB /* DownloadTool */,
+				CF2FAC7120FDED56002971DB /* DownloadToolTests */,
+				CF2FAC7C20FDED56002971DB /* DownloadToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF2FAC5820FDED53002971DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2FAC6A20FDED55002971DB /* LaunchScreen.storyboard in Resources */,
+				CF2FAC6720FDED55002971DB /* Assets.xcassets in Resources */,
+				CF2FAC6520FDED53002971DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2FAC7020FDED56002971DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2FAC7B20FDED56002971DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF2FAC5620FDED53002971DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2FAC6220FDED53002971DB /* ViewController.m in Sources */,
+				CF2FAC6D20FDED55002971DB /* main.m in Sources */,
+				CF2FAC5F20FDED53002971DB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2FAC6E20FDED56002971DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2FAC7720FDED56002971DB /* DownloadToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2FAC7920FDED56002971DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2FAC8220FDED56002971DB /* DownloadToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF2FAC7420FDED56002971DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF2FAC5920FDED53002971DB /* DownloadTool */;
+			targetProxy = CF2FAC7320FDED56002971DB /* PBXContainerItemProxy */;
+		};
+		CF2FAC7F20FDED56002971DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF2FAC5920FDED53002971DB /* DownloadTool */;
+			targetProxy = CF2FAC7E20FDED56002971DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF2FAC6320FDED53002971DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2FAC6420FDED53002971DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF2FAC6820FDED55002971DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2FAC6920FDED55002971DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF2FAC8420FDED56002971DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF2FAC8520FDED56002971DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF2FAC8720FDED56002971DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ffd.DownloadTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF2FAC8820FDED56002971DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ffd.DownloadTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF2FAC8A20FDED56002971DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ffd.DownloadToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DownloadTool.app/DownloadTool";
+			};
+			name = Debug;
+		};
+		CF2FAC8B20FDED56002971DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ffd.DownloadToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DownloadTool.app/DownloadTool";
+			};
+			name = Release;
+		};
+		CF2FAC8D20FDED56002971DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ffd.DownloadToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DownloadTool;
+			};
+			name = Debug;
+		};
+		CF2FAC8E20FDED56002971DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ffd.DownloadToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DownloadTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2FAC5520FDED53002971DB /* Build configuration list for PBXProject "DownloadTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2FAC8420FDED56002971DB /* Debug */,
+				CF2FAC8520FDED56002971DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2FAC8620FDED56002971DB /* Build configuration list for PBXNativeTarget "DownloadTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2FAC8720FDED56002971DB /* Debug */,
+				CF2FAC8820FDED56002971DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2FAC8920FDED56002971DB /* Build configuration list for PBXNativeTarget "DownloadToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2FAC8A20FDED56002971DB /* Debug */,
+				CF2FAC8B20FDED56002971DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2FAC8C20FDED56002971DB /* Build configuration list for PBXNativeTarget "DownloadToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2FAC8D20FDED56002971DB /* Debug */,
+				CF2FAC8E20FDED56002971DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF2FAC5220FDED53002971DB /* Project object */;
+}
