@@ -17,6 +17,11 @@
 		CF2FAC8220FDED56002971DB /* DownloadToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC8120FDED56002971DB /* DownloadToolUITests.m */; };
 		CF2FAC9120FDEF8E002971DB /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC9020FDEF8E002971DB /* SessionModel.m */; };
 		CF2FAC9520FDEFF3002971DB /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC9420FDEFF3002971DB /* DownloadManager.m */; };
+		CF2FAC9A20FEF0C7002971DB /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC9920FEF0C7002971DB /* TableViewCell.m */; };
+		CF2FAC9D20FEF0E5002971DB /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC9C20FEF0E5002971DB /* DownloadViewController.m */; };
+		CF2FACA020FEF143002971DB /* DownloadedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC9F20FEF143002971DB /* DownloadedCell.m */; };
+		CF2FACA320FEF156002971DB /* DownloadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FACA220FEF156002971DB /* DownloadingCell.m */; };
+		CF2FACA620FF29B0002971DB /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FACA520FF29B0002971DB /* UIView+Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,16 @@
 		CF2FAC9020FDEF8E002971DB /* SessionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
 		CF2FAC9320FDEFF3002971DB /* DownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
 		CF2FAC9420FDEFF3002971DB /* DownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		CF2FAC9820FEF0C7002971DB /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		CF2FAC9920FEF0C7002971DB /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		CF2FAC9B20FEF0E5002971DB /* DownloadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		CF2FAC9C20FEF0E5002971DB /* DownloadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		CF2FAC9E20FEF143002971DB /* DownloadedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadedCell.h; sourceTree = "<group>"; };
+		CF2FAC9F20FEF143002971DB /* DownloadedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadedCell.m; sourceTree = "<group>"; };
+		CF2FACA120FEF156002971DB /* DownloadingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadingCell.h; sourceTree = "<group>"; };
+		CF2FACA220FEF156002971DB /* DownloadingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadingCell.m; sourceTree = "<group>"; };
+		CF2FACA420FF29AF002971DB /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		CF2FACA520FF29B0002971DB /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +128,12 @@
 				CF2FAC9620FDF332002971DB /* FirController */,
 				CF2FAC6020FDED53002971DB /* ViewController.h */,
 				CF2FAC6120FDED53002971DB /* ViewController.m */,
+				CF2FAC9820FEF0C7002971DB /* TableViewCell.h */,
+				CF2FAC9920FEF0C7002971DB /* TableViewCell.m */,
 				CF2FAC9720FDF34E002971DB /* SecController */,
 				CF2FAC6320FDED53002971DB /* Main.storyboard */,
+				CF2FACA420FF29AF002971DB /* UIView+Addition.h */,
+				CF2FACA520FF29B0002971DB /* UIView+Addition.m */,
 				CF2FAC6620FDED55002971DB /* Assets.xcassets */,
 				CF2FAC6820FDED55002971DB /* LaunchScreen.storyboard */,
 				CF2FAC6B20FDED55002971DB /* Info.plist */,
@@ -162,6 +181,12 @@
 		CF2FAC9720FDF34E002971DB /* SecController */ = {
 			isa = PBXGroup;
 			children = (
+				CF2FAC9B20FEF0E5002971DB /* DownloadViewController.h */,
+				CF2FAC9C20FEF0E5002971DB /* DownloadViewController.m */,
+				CF2FAC9E20FEF143002971DB /* DownloadedCell.h */,
+				CF2FAC9F20FEF143002971DB /* DownloadedCell.m */,
+				CF2FACA120FEF156002971DB /* DownloadingCell.h */,
+				CF2FACA220FEF156002971DB /* DownloadingCell.m */,
 			);
 			path = SecController;
 			sourceTree = "<group>";
@@ -296,8 +321,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2FACA320FEF156002971DB /* DownloadingCell.m in Sources */,
 				CF2FAC6220FDED53002971DB /* ViewController.m in Sources */,
+				CF2FAC9D20FEF0E5002971DB /* DownloadViewController.m in Sources */,
+				CF2FAC9A20FEF0C7002971DB /* TableViewCell.m in Sources */,
 				CF2FAC6D20FDED55002971DB /* main.m in Sources */,
+				CF2FACA020FEF143002971DB /* DownloadedCell.m in Sources */,
+				CF2FACA620FF29B0002971DB /* UIView+Addition.m in Sources */,
 				CF2FAC9120FDEF8E002971DB /* SessionModel.m in Sources */,
 				CF2FAC9520FDEFF3002971DB /* DownloadManager.m in Sources */,
 				CF2FAC5F20FDED53002971DB /* AppDelegate.m in Sources */,

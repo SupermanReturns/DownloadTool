@@ -40,9 +40,10 @@ typedef void(^DownloadStateBlock)(DownloadState state);
 @property (atomic, copy) DownloadProgressBlock progressBlock;
 
 /** 下载状态 */
-@property (atomic, copy) ZFDownloadStateBlock stateBlock;
+@property (atomic, copy) DownloadStateBlock stateBlock;
 
 - (float)calculateFileSizeInUnit:(unsigned long long)contentLength;
 
 - (NSString *)calculateUnit:(unsigned long long)contentLength;
+
 @end
