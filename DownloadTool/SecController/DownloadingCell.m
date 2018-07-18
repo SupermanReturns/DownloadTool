@@ -50,8 +50,6 @@
 }
 -(void)layoutSubviews{
     [super layoutSubviews];
-//    _fileNameLabel.frame=CGRectMake(75, 27, 55, 16);
-//    _sizeLabel.frame=CGRectMake(93, 45, 42, 16);
     _fileNameLabel.frame=CGRectMake(15, 8, self.width-30, 16);
     _downloadBtn.frame=CGRectMake(self.width-60,14 , 40, 40);
 
@@ -59,7 +57,6 @@
     
     _speedLabel.frame=CGRectMake(_downloadBtn.left-60, _progress.bottom+10, 50, 16);
 
-    
     _progressLabel.frame=CGRectMake(15, _progress.bottom+10, _speedLabel.left-10, 16);
 }
 -(void)setSessionModel:(SessionModel *)sessionModel

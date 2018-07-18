@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SessionModel.h"
 
 
 @interface DownloadedCell : UITableViewCell

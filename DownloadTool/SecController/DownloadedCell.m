@@ -7,7 +7,7 @@
 //
 
 #import "DownloadedCell.h"
-#import "SessionModel.h"
+//#import "SessionModel.h"
 
 @implementation DownloadedCell
 -(id)initWithFrame:(CGRect)frame{

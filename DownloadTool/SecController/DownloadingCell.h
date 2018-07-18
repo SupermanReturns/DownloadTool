@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "DownloadManager.h"
 #import "DownloadManager.h"
+
 #import "SessionModel.h"
+
+
 
 typedef void(^DownloadBlock)(UIButton *);
 

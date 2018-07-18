@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+
+typedef void(^downloadCallBack)(void);
+
 @interface TableViewCell : UITableViewCell
 
 @property(nonatomic,strong)UILabel *titleLabel;
 @property(nonatomic,strong)UIButton *downloadBtn;
 
 
-@property (nonatomic, copy) void(^downloadCallBack)();
+@property (nonatomic, copy)downloadCallBack downloadCallBack;
 
 @end
