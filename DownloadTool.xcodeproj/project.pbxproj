@@ -15,6 +15,8 @@
 		CF2FAC6D20FDED55002971DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC6C20FDED55002971DB /* main.m */; };
 		CF2FAC7720FDED56002971DB /* DownloadToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC7620FDED56002971DB /* DownloadToolTests.m */; };
 		CF2FAC8220FDED56002971DB /* DownloadToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC8120FDED56002971DB /* DownloadToolUITests.m */; };
+		CF2FAC9120FDEF8E002971DB /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC9020FDEF8E002971DB /* SessionModel.m */; };
+		CF2FAC9520FDEFF3002971DB /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2FAC9420FDEFF3002971DB /* DownloadManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		CF2FAC7D20FDED56002971DB /* DownloadToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2FAC8120FDED56002971DB /* DownloadToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadToolUITests.m; sourceTree = "<group>"; };
 		CF2FAC8320FDED56002971DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2FAC8F20FDEF8E002971DB /* SessionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionModel.h; sourceTree = "<group>"; };
+		CF2FAC9020FDEF8E002971DB /* SessionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
+		CF2FAC9320FDEFF3002971DB /* DownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		CF2FAC9420FDEFF3002971DB /* DownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,13 @@
 		CF2FAC5C20FDED53002971DB /* DownloadTool */ = {
 			isa = PBXGroup;
 			children = (
+				CF2FAC9220FDEF9A002971DB /* Download */,
 				CF2FAC5D20FDED53002971DB /* AppDelegate.h */,
 				CF2FAC5E20FDED53002971DB /* AppDelegate.m */,
+				CF2FAC9620FDF332002971DB /* FirController */,
 				CF2FAC6020FDED53002971DB /* ViewController.h */,
 				CF2FAC6120FDED53002971DB /* ViewController.m */,
+				CF2FAC9720FDF34E002971DB /* SecController */,
 				CF2FAC6320FDED53002971DB /* Main.storyboard */,
 				CF2FAC6620FDED55002971DB /* Assets.xcassets */,
 				CF2FAC6820FDED55002971DB /* LaunchScreen.storyboard */,
@@ -130,6 +139,31 @@
 				CF2FAC8320FDED56002971DB /* Info.plist */,
 			);
 			path = DownloadToolUITests;
+			sourceTree = "<group>";
+		};
+		CF2FAC9220FDEF9A002971DB /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				CF2FAC8F20FDEF8E002971DB /* SessionModel.h */,
+				CF2FAC9020FDEF8E002971DB /* SessionModel.m */,
+				CF2FAC9320FDEFF3002971DB /* DownloadManager.h */,
+				CF2FAC9420FDEFF3002971DB /* DownloadManager.m */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		CF2FAC9620FDF332002971DB /* FirController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FirController;
+			sourceTree = "<group>";
+		};
+		CF2FAC9720FDF34E002971DB /* SecController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SecController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +298,8 @@
 			files = (
 				CF2FAC6220FDED53002971DB /* ViewController.m in Sources */,
 				CF2FAC6D20FDED55002971DB /* main.m in Sources */,
+				CF2FAC9120FDEF8E002971DB /* SessionModel.m in Sources */,
+				CF2FAC9520FDEFF3002971DB /* DownloadManager.m in Sources */,
 				CF2FAC5F20FDED53002971DB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,14 +470,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = DownloadTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ffd.DownloadTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,14 +488,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = DownloadTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ffd.DownloadTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
