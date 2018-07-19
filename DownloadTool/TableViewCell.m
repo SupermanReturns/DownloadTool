@@ -7,15 +7,18 @@
 //
 
 #import "TableViewCell.h"
+#import "UIView+Addition.h"
+
 
 @implementation TableViewCell
 
 
--(id)initWithFrame:(CGRect)frame{
-    
-    self = [super initWithFrame:frame];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self setupUI];
+
     }
     return self;
 }
@@ -27,20 +30,28 @@
     
     self.downloadBtn=[[UIButton alloc]init];
     [self.downloadBtn setTitle:@"下载" forState:UIControlStateNormal];
+    self.downloadBtn.titleLabel.font=[UIFont systemFontOfSize:12];
+    self.downloadBtn.titleLabel.textColor=[UIColor blackColor];
+    self.downloadBtn.tintColor=[UIColor blackColor];
+    
+    
     [self.downloadBtn addTarget:self action:@selector(downloadAction) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:self.downloadBtn];
+    
     
 }
 -(void)layoutSubviews{
     [super layoutSubviews];
-    _titleLabel.frame=CGRectMake(20, 17, 45, 18);
-    _downloadBtn.frame=CGRectMake(85, 11, 30, 30);
+    _downloadBtn.frame=CGRectMake(self.width-50, 10, 50, 40);
+//    [self.downloadBtn setTitle:@"下载" forState:UIControlStateNormal];
 
+    _titleLabel.frame=CGRectMake(20, 17, _downloadBtn.left-20, 18);
+//    _downloadBtn.frame=CGRectMake(85, 11, 30, 30);
+    
 }
 -(void)downloadAction{
     if (self.downloadCallBack) {
         self.downloadCallBack();
-        
     }
 }
 - (void)awakeFromNib {

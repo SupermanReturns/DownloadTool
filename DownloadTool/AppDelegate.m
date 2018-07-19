@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DownloadViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    UITabBarController *tabBar=[[UITabBarController alloc]init];
+    
+    ViewController *vc=[[ViewController alloc]init];
+    
+    DownloadViewController *downVC=[[DownloadViewController alloc]init];
+    
+    UINavigationController *oneNav=[[UINavigationController alloc]initWithRootViewController:vc];
+    UINavigationController *twoNav=[[UINavigationController alloc]initWithRootViewController:downVC];
+
+    
+    oneNav.tabBarItem=[[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:0];
+    twoNav.tabBarItem=[[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemDownloads tag:0];
+    
+    tabBar.viewControllers=@[oneNav,twoNav];
+
+    self.window.rootViewController=tabBar;
+    
     return YES;
 }
 

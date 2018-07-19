@@ -12,14 +12,16 @@
 
 @implementation DownloadingCell
 
--(id)initWithFrame:(CGRect)frame{
-    
-    self = [super initWithFrame:frame];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self setupUI];
+        
     }
     return self;
 }
+
 -(void)setupUI{
     
     UILabel *fileNameLabel=[[UILabel alloc]init];

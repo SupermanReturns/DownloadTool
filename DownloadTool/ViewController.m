@@ -22,9 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title=@"下载列表";
     self.tableView=[[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
+//    self.tableView.selectst
     [self.view addSubview:self.tableView];
     
     self.dataSource = @[@"http://dldir1.qq.com/qqfile/QQforMac/QQ_V4.2.4.dmg",
@@ -41,7 +43,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"listCell"];
+//    TableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"listCell"];
+    
+    static NSString *CellIdentifier = @"Cell";
+    TableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell==nil) {
+        cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    cell.selectionStyle=UITableViewCellSelectionStyleNone;
+    
     cell.titleLabel.text = self.dataSource[indexPath.row];
     __block NSIndexPath *blockIndexPath = indexPath;
     __weak typeof(self) weakSelf = self;
@@ -60,7 +70,9 @@
     };
     return cell;
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 53;
+}
 
 
 - (void)didReceiveMemoryWarning {

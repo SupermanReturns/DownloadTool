@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title=@"本地数据";
+
     self.tableView=[[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.tableView.delegate=self;
     self.tableView.dataSource=self;
@@ -106,11 +108,26 @@
 {
     __block SessionModel *downloadObject = self.downloadObjectArr[indexPath.section][indexPath.row];
     if (indexPath.section == 0) {
-        DownloadedCell *cell = [tableView dequeueReusableCellWithIdentifier:@"downloadedCell"];
+//        DownloadedCell *cell = [tableView dequeueReusableCellWithIdentifier:@"downloadedCell"];
+        
+        
+        static NSString *CellIdentifier = @"downloadedCell";
+        DownloadedCell *cell=[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell==nil) {
+            cell = [[DownloadedCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
         cell.sessionModel = downloadObject;
         return cell;
     }else if (indexPath.section == 1) {
-        DownloadingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"downloadingCell"];
+//        DownloadingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"downloadingCell"];
+        
+        static NSString *CellIdentifier = @"downloadingCell";
+        DownloadingCell *cell=[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell==nil) {
+            cell = [[DownloadingCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
+        
+        
         cell.sessionModel = downloadObject;
         [DownloadManager sharedInstance].delegate = self;
         cell.downloadBlock = ^(UIButton *sender) {
@@ -129,7 +146,9 @@
 - (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{
     return @"删除";
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70;
+}
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
 }
